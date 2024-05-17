@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+body{
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(./img/fondo.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+a:hover{
+    color: rgb(75, 29, 68);
+}
+
+/*Header*/
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn {
+    background-color: rgb(75, 29, 68);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+
+}
+.action_btn:active {
+    scale: 0.95;
+}
+/*DROPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+/*HERO*/
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:justify;
+    color: #fff;
+}
+#hero h1{
+    margin-bottom: 1rem;
+    font-size: 75px;    
+    line-height: 80px;
+    color: #F9FAFC;
+    font-size: 75px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 15%;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    
+   
+}
+#hero p{
+    font-size: 16px;
+    color:#C5C5C5;
+    padding-top: 0;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 0;
+    margin-bottom: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*RESPONSIVE DESIGN*/
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/*Resto de estilos*/
+#nosotros{
+    height: 100vh;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+#nosotros h2{   
+    padding: 1em;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer .container div {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+.footer h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.footer p, .footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #fff;
+}
+.footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+.footer .social-icons a img {
+    width: 24px;
+    height: 24px;
+}
