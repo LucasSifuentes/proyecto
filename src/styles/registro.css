@@ -31,24 +31,23 @@
   /*------------------------- HEADER -----------------------------*/
   
   header {
-    background-color: #153977;
+    background-color: #000000;
   }
   
   .d-header {
     display: flex;
     justify-content: center;
-    background-color: #153977;
+    background-color: #000000;
   }
   
   .d-button {
     display: flex;
-    background-color: #153977;
+    background-color: #000000;
     margin-right: 10px;
   }
   
   .logo {
     width: 200px;
-    border-radius: 50%;
   }
   
   /*------------------------- NAV -----------------------------*/
@@ -60,7 +59,7 @@
   }
   
   nav {
-    background-color: #153977;
+    background-color: #000000;
     text-align: center;
   }
   
@@ -281,7 +280,7 @@
       position: absolute;
       left: 0;
       list-style-type: none;
-      background-color: #153977;
+      background-color: #000000;
       z-index: 1;
     }
   
@@ -390,7 +389,7 @@
       position: relative;
       padding: 10px;
       list-style-type: none;
-      background-color: #153977;
+      background-color: #000000;
     }
   }
   
