@@ -1,0 +1,25 @@
+body {
+    background-color: #808080; /* gris */
+}
+
+h1 {
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contenedor {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(82, 191, 224);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
