@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Reserva</title>
-    <link rel="stylesheet" href="./src/styles/reserva.css">
+    <link rel="stylesheet" href="src/styles/reserva.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
       rel="stylesheet"/>
@@ -158,53 +158,57 @@
         
     </main>
     <footer class="temp-footer">
-        <div class="elementos-footer">
-          <div class="navegacion">
-            <h4>NAVEGACIÓN</h4>
-  
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="registro.html">Reservas</a></li>
+      <div class="elementos-footer">
+        <div class="logo-footer">
+          <a href="#"><img src="img/L1.png" alt="Logo"></a>
+        </div> 
+        <div class="navegacion">
+          <h4>NAVEGACIÓN</h4>
+
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reserva.html">Reservas</a></li>
+        </div>
+        <div class="contactanos">
+          <h4>CONTACTANOS</h4>
+          <div class="contact">
+            <span class="fa-solid fa-phone"></span>
+            <a href="tel: 7777-7777">
+              <p style="margin-left: 10px">+54 9 7777-7777</p>
+            </a>
           </div>
-          <div class="contactanos">
-            <h4>CONTACTANOS</h4>
-            <div class="contact">
-              <span class="fa-solid fa-phone"></span>
-              <a href="tel: 7777-7777">
-                <p style="margin-left: 10px">+54 9 7777-7777</p>
-              </a>
-            </div>
-            <div class="contact">
-              <span class="fas fa-envelope"></span>
-              <a href="mailto:sabor.porteño@gmail.com">
-                <p style="margin-left: 10px">sabor.porteno@gmail.com</p>
-              </a>
-            </div>
-            <div class="contact">
-              <span class="fa-solid fa-location-dot"></span>
-              <a
-                href=https://maps.app.goo.gl/TmWqE8NuPWEcqzzE7>
-                <p style="margin-left: 10px">Av. Zaraza 777</p>
-              </a>
-            </div>
+          <div class="contact">
+            <span class="fas fa-envelope"></span>
+            <a href="mailto:sabor.porteño@gmail.com">
+              <p style="margin-left: 10px">sabor.porteno@gmail.com</p>
+            </a>
           </div>
-          <div class="redes-sociales">
-            <h4>REDES SOCIALES</h4>
-            <div class="redes">
-              <span class="fab fa-instagram"></span>
-              <a href="https://www.instagram.com/zaraza/">
-                <p style="margin-left: 10px">Instagram</p>
-              </a>
-            </div>
-            <div class="redes">
-              <span class="fab fa-facebook"></span>
-              <a href="www.zaraza.net">
-                <p style="margin-left: 10px">Facebook</p>
-              </a>
-            </div>
+          <div class="contact">
+            <span class="fa-solid fa-location-dot"></span>
+            <a
+              href="https://www.google.com/maps/place/B7540,+Provincia+de+Buenos+Aires/@-37.4653943,-61.9640502,13z/data=!3m1!4b1!4m6!3m5!1s0x95eb72dda7cb76af:0x4220a7d68505aad4!8m2!3d-37.4660573!4d-61.9259479!16s%2Fg%2F11g8pd9sr6?entry=ttu"
+            >
+              <p style="margin-left: 10px">Av. Zaraza 777</p>
+            </a>
           </div>
         </div>
-        <br>
-      </footer>
+        <div class="redes-sociales">
+          <h4>REDES SOCIALES</h4>
+          <div class="redes">
+            <span class="fab fa-instagram"></span>
+            <a href="https://www.instagram.com/zaraza/">
+              <p style="margin-left: 10px">Instagram</p>
+            </a>
+          </div>
+          <div class="redes">
+            <span class="fab fa-facebook"></span>
+            <a href="www.saborporteno.net">
+              <p style="margin-left: 10px">Facebook</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br>
+    </footer>
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
