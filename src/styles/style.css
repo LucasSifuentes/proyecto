@@ -1,7 +1,7 @@
 /*-------------------------NORMALIZE------------------*/
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -23,7 +23,9 @@ a{
   font-size: 1rem;
 }
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 /*-------------------------HEADER------------------*/
 header{
@@ -131,7 +133,7 @@ a:hover{
 .titulo1{
 
     font-family: Georgia, 'Times New Roman', Times, serif ;
-}    
+}
 
 
 
@@ -182,7 +184,7 @@ section#hero{
 
     .navbar .toggle_btn{
         display: block;
-    }
+}
 
     .dropdown_menu{
         display: block;
@@ -214,9 +216,10 @@ section#hero{
     text-align: center;
     margin: 20px auto ;
     align-items: center;
-
+    
 }
 .heading h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;  
   font-size: 50px;
   color: #000;
   margin-bottom: 10px;
@@ -268,6 +271,7 @@ section#hero{
   flex: 1;
 }
 .about-content h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 23px;
   margin-bottom: 15px;
   color: #333;
@@ -330,7 +334,7 @@ section#hero{
   height: 60vw;
   text-align: center;
   align-content: center;
-  color: #fff;
+    color: #fff;
 }
 
 
@@ -339,11 +343,75 @@ section#hero{
 
 /*------------------------- SUCURSALES ------------------*/
 .sucursales {
-  background-color: #F9FAFC;
-  height: 60vw;
-  text-align: center;
+  background-color: #fcf9fc;
   align-content: center;
-  color: #291546;
+  color: #000000;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+.sucursales-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.sucursal {
+  background-color: #291546;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%;
+  box-sizing: border-box;
+  max-width: 30%;
+}
+
+.sucursal h3 {
+  font-size: 1.5em;
+  color: #dddddd;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 5px;
+}
+
+.sucursal p {
+  font-size: 1em;
+  color: #c1bebe;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.mapa {
+  margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+  .sucursal {
+      flex: 1 1 45%;
+      max-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sucursal {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+
+  .sucursales {
+      padding: 10px;
+  }
+
+  .sucursal {
+      padding: 15px;
+  }
 }
 
 
@@ -356,9 +424,10 @@ section#hero{
 /*------------------------- FOOTER ------------------*/
 .logo-footer img {
   margin-top: 0px;
-  width: 70px; /* Ajusta el tamaño según sea necesario */
+  width: 80px; /* Ajusta el tamaño según sea necesario */
   height: auto; /* Mantiene la proporción de la imagen */
   margin-left: 0;
+  position: static;
 }
 .temp-footer {
     grid-area: footer;
@@ -367,11 +436,12 @@ section#hero{
   
   .elementos-footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
     flex-wrap: wrap;
     font-family: "Montserrat", sans-serif;
     padding-top: 30px;
     color: white;
+    
   }
   
   .navegacion {
