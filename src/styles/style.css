@@ -1,3 +1,4 @@
+/*-------------------------NORMALIZE------------------*/
 * {
     margin: 0;
     padding: 0; 
@@ -10,32 +11,37 @@
 }
 body{
     height: 100vh;
-    background-color: #000;
+    background-color: #F9FAFC;
     background-image: linear-gradient(
-        rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(./img/fondo.jpg);
+        rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(../../img/fondo.jpg);
     background-size: cover ;
     background-position: center;
 }
-
-li{
-    list-style: none;
-}
 a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-}
-a:hover{
-    color: rgb(75, 29, 68);
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
 }
 
-/*Header*/
+
+
+/*-------------------------HEADER------------------*/
 header{
     position: relative;
     padding: 0 2rem;
 }
+li{
+  list-style: none;
+}
 
 
+
+
+
+/*-------------------------NAVBAR------------------*/
+a:hover{
+  color: rgb(75, 29, 68);
+}
 .navbar{
     width: 100%;
     height: 60px;
@@ -51,10 +57,11 @@ header{
 }
 
 .logo img {
-    margin-top: 100px;
-    width: 200px; /* Ajusta el tamaño según sea necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
+  margin-top: 40px;
+
+  width: 70px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
   
 .navbar .links {
     display: flex;
@@ -114,11 +121,23 @@ header{
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 600px) {
+  .centrar-en-movil {
+      text-align:start;
+  }
+}
+
 .titulo1{
 
     font-family: Georgia, 'Times New Roman', Times, serif ;
 }    
-/*HERO*/
+
+
+
+
+
+/*-------------------------HERO------------------*/
 section#hero{
     height: calc(100vh - 60px);
     display: flex;
@@ -141,9 +160,6 @@ section#hero{
     padding-bottom: 2%;
     padding-left: 20%;
     padding-right: 20%;
-    
-    
-   
 }
 #hero p{
     font-size: 16px;
@@ -180,31 +196,173 @@ section#hero{
     }
 }
 
-/*Resto de estilos*/
+
+
+
+
+
+/*------------------------- SOBRE NOSOTROS------------------*/
 #nosotros{
-    height: 100vh;
-    background-color: rgb(223, 223, 223);
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+  background-color: #F9FAFC;
+  text-align: center;
 }
-#nosotros h2{   
-    padding: 1em;
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto ;
+    align-items: center;
+
+}
+.heading h1{
+  font-size: 50px;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  position: relative;
+}
+.heading h1::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 5px auto;
+  background-color: #491668;
+}
+.heading p{
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px ;
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/*------------------------- footer ------------------*/
-  
+.about-image{
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.about-image img{
+  max-width: 100%;
+  height: auto;
+  display:block;
+  transition: 0.5s ease;
+}
+.about-image:hover img{
+  transform: scale(1.2);
+}
+.about-content{
+  flex: 1;
+}
+.about-content h2{
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+.about-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+.read-more{
+  display: inline-flex;
+  padding: 10px 20px;
+  background-color: rgb(75, 29, 68);
+  color: #fff;
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  transition: 0.3s ease;
+}
+.read-more:hover{
+  background-color: rgb(137, 44, 123);
+}
+@media screen and (max-width: 768px ) {
+  .heading{
+    padding: 0px 20px;
+  }
+  .heading h1{
+    font-size: 36px;
+  }
+  .heading p{
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .container{
+    padding: 0px;
+  }
+  .about{
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about-image{
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .about-content p{
+    padding: 0px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+/*------------------------- MENU ------------------*/
+.menu {
+  background-color: #291546;
+  height: 60vw;
+  text-align: center;
+  align-content: center;
+  color: #fff;
+}
+
+
+
+
+
+/*------------------------- SUCURSALES ------------------*/
+.sucursales {
+  background-color: #F9FAFC;
+  height: 60vw;
+  text-align: center;
+  align-content: center;
+  color: #291546;
+}
+
+
+
+
+
+
+
+
+/*------------------------- FOOTER ------------------*/
+.logo-footer img {
+  margin-top: 0px;
+  width: 70px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-left: 0;
+}
 .temp-footer {
     grid-area: footer;
-    background-color: black;
+    background-color: rgb(75, 29, 68);
   }
   
   .elementos-footer {
@@ -244,6 +402,11 @@ section#hero{
     margin-top: 5px;
   }
   
+
+
+
+
+
   /* -------------------------- MEDIA QUERIES ------------------------------------*/
   
   @media (min-width: 340px) {
@@ -305,7 +468,6 @@ section#hero{
         "main"
         "footer";
     }
-  
     body {
       font-size: 14px;
     }
@@ -330,7 +492,6 @@ section#hero{
         "main"
         "footer";
     }
-  
     body {
       font-size: 12px;
     }
@@ -339,7 +500,6 @@ section#hero{
       padding: 5px;
     }
   }
-  
   @media (min-width: 543px) {
     .general-container {
       display: grid;
@@ -370,7 +530,6 @@ section#hero{
         "main"
         "footer";
     }
-  
     body {
       font-size: 14px;
     }
@@ -415,7 +574,6 @@ section#hero{
       padding: 5px;
     }
   }
-  
   @media (min-width: 885px) {
     .general-container {
       display: grid;
@@ -432,7 +590,6 @@ section#hero{
       padding: 10px;
     }
   }
-  
   @media screen and (min-width: 1250px) {
     .general-container {
       display: grid;
@@ -443,7 +600,6 @@ section#hero{
         "main main main"
         "footer footer footer";
     }
-  
     body {
       font-size: 16px;
     }
@@ -457,3 +613,8 @@ section#hero{
       font-size: 16px;
     }
   }
+  @media (max-width: 600px) {
+    .texto-oculto {
+        display: none;
+    }
+}
