@@ -275,6 +275,8 @@ h4 {
   margin-top: 5px;
 }
 
+
+
 /* -------------------------- MEDIA QUERIES ------------------------------------*/
   
 @media (min-width: 340px) {
@@ -287,6 +289,8 @@ h4 {
       "main"
       "footer";
   }
+
+
 
   body {
     font-size: 12px;
