@@ -204,11 +204,13 @@ section#hero {
 
 /* titulo principal */
 .tituloPrincipal {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   color: #C5C5C5;
-  font-size: x-large;
+  font-size: 50px;
   font-weight: 700;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .titulo {
@@ -218,11 +220,12 @@ section#hero {
 }
 
 .divContenedor {
-  width: 300px;
+  width: 400px;
   color: #C5C5C5;
   border: solid 2px rgb(104, 102, 81);
   border-radius: 15px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .imgCss {
