@@ -1,0 +1,18 @@
+[
+    {
+      "nombre": "Hamburguesa",
+      "precio": 8.99,
+      "imagen": "https://www.clarin.com/img/2022/05/27/0HXb0UR0v_1256x620__1.jpg"
+    },
+    {
+      "nombre": "Pizza",
+      "precio": 12.50,
+      "imagen": "https://www.clarin.com/img/2022/05/27/0HXb0UR0v_1256x620__1.jpg"
+    },
+    {
+      "nombre": "Ensalada",
+      "precio": 6.75,
+      "imagen": "https://www.clarin.com/img/2022/05/27/0HXb0UR0v_1256x620__1.jpg"
+    }
+    
+  ]
