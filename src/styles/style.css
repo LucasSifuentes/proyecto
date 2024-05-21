@@ -781,3 +781,47 @@ h4 {
     display: none;
   }
 }
+
+/* ------------------ocultacion logo footer---------------*/
+
+@media (max-width: 600px) {
+  /* Oculta el logo-footer en pantallas pequeñas */
+  .logo-footer {
+    display: none;
+  }
+
+  /* Estilos para los elementos del footer en pantallas pequeñas */
+  .elementos-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px; /* Ajusta el padding según tus necesidades */
+  }
+
+  .navegacion,
+  .contactanos,
+  .redes-sociales {
+    margin-bottom: 10px; /* Añade un margen inferior para separar las secciones */
+  }
+
+  .navegacion li,
+  .contactanos .contact,
+  .redes-sociales .redes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Espaciado entre los elementos */
+  }
+
+  .navegacion li a,
+  .contactanos a,
+  .redes-sociales a {
+    display: inline-block;
+    margin-left: 0px; /* Espaciado a la izquierda de los íconos */
+  }
+
+  .navegacion h4,
+  .contactanos h4,
+  .redes-sociales h4 {
+    margin-bottom: 10px; /* Espaciado debajo de los títulos */
+  }
+}
