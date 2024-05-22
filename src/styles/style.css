@@ -413,12 +413,18 @@ section#hero {
 /*------------------------- MENU ------------------*/
 .menu {
   background-color: #291546;
-  height: 60vw;
+  height: 3vw;
   text-align: center;
   align-content: center;
   color: #fff;
 }
-
+.menu2 {
+  background-color: #ffffff;
+  height: 3vw;
+  text-align: center;
+  align-content: center;
+  color: #fff;
+}
 
 
 
@@ -516,7 +522,7 @@ section#hero {
 
 .temp-footer {
   grid-area: footer;
-  background-color: rgb(75, 29, 68);
+  background-color: #291546;
 }
 
 .elementos-footer {
