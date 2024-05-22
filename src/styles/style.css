@@ -273,7 +273,9 @@ section#hero {
 
 /*------------------------- SOBRE NOSOTROS------------------*/
 #nosotros {
-  background-color:#e8e8e8 ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(../../img/about.jpg);
+  background-size:cover;
+  background-position: center;
   text-align: center;
 }
 
