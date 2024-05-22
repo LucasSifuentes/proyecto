@@ -9,7 +9,12 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Esto oculta cualquier desbordamiento horizontal */
+}
 body {
   height: 100vh;
   background-color: #F9FAFC;
@@ -23,10 +28,11 @@ a {
   color: #fff;
   font-size: 1rem;
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
+
+
 
 /*-------------------------HEADER------------------*/
 header {
@@ -44,7 +50,7 @@ li {
 
 /*-------------------------NAVBAR------------------*/
 a:hover {
-  color: rgb(75, 29, 68);
+  color: rgb(158, 62, 144);
 }
 
 .navbar {
@@ -267,7 +273,7 @@ section#hero {
 
 /*------------------------- SOBRE NOSOTROS------------------*/
 #nosotros {
-  background-color: #F9FAFC;
+  background-color:#e8e8e8 ;
   text-align: center;
 }
 
@@ -285,7 +291,7 @@ section#hero {
 .heading h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 50px;
-  color: #000;
+  color: #000000;
   margin-bottom: 10px;
   margin-top: 40px;
   position: relative;
@@ -298,20 +304,16 @@ section#hero {
   height: 4px;
   display: block;
   margin: 5px auto;
-  background-color: #491668;
+  background-color: #000000;
 }
 
-.heading p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
+
 
 .container {
   width: 90%;
   margin: 0 auto;
   padding: 10px 20px;
+  padding-bottom: 10%;
 }
 
 .about {
@@ -346,13 +348,13 @@ section#hero {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 23px;
   margin-bottom: 15px;
-  color: #333;
+  color: #151515;
 }
 
 .about-content p {
   font-size: 18px;
   line-height: 1.5;
-  color: #666;
+  color: #4e4d4d;
 }
 
 .read-more {
@@ -406,32 +408,48 @@ section#hero {
   }
 }
 
-
-
-
-
-/*------------------------- MENU ------------------*/
-.menu {
-  background-color: #291546;
-  height: 3vw;
-  text-align: center;
-  align-content: center;
+.botonn {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3c1756;
   color: #fff;
-}
-.menu2 {
-  background-color: #ffffff;
-  height: 3vw;
   text-align: center;
-  align-content: center;
-  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
 }
+
+.botonn:hover {
+  background-color: #6b1c8f;
+}
+
+.botonn:focus {
+  outline: none;
+}
+
+.botones {
+  text-align: center;
+  padding: 10px;
+  
+}
+
+
+
 
 
 
 
 /*------------------------- SUCURSALES ------------------*/
 .sucursales {
-  background-color: #fcf9fc;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../../img/fondo-bsas.jpg);
+  background-size: cover;
+  background-position: center;
   align-content: center;
   color: #000000;
   max-width: 100%;
@@ -441,17 +459,44 @@ section#hero {
   padding-bottom: 40px;
   text-align: center;
 }
+.heading-sucursales {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+  align-items: center;
 
-
+}
+.heading-sucursales h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  position: relative;
+}
+.heading-sucursales h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 5px auto;
+  background-color: #ffffff;
+}
 .sucursales-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  
 }
 
 .sucursal {
-  background-color: #291546;
+  
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
   margin: 10px;
   padding: 20px;
   border-radius: 18px;
@@ -478,6 +523,7 @@ section#hero {
 
 .mapa {
   margin-top: 15px;
+  padding: 20px;
 }
 
 @media (max-width: 900px) {
@@ -501,7 +547,20 @@ section#hero {
     padding: 15px;
   }
 }
+@media screen and (max-width: 768px) {
+  .heading-sucursales {
+    padding: 0px 20px;
+  }
 
+  .heading-sucursales h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+}
 
 
 
@@ -510,57 +569,115 @@ section#hero {
 
 
 /*------------------------- FOOTER ------------------*/
-.logo-footer img {
-  margin-top: 0px;
-  width: 80px;
-  /* Ajusta el tamaño según sea necesario */
-  height: auto;
-  /* Mantiene la proporción de la imagen */
-  margin-left: 0;
-  position: static;
-}
-
-.temp-footer {
-  grid-area: footer;
-  background-color: #291546;
-}
-
-.elementos-footer {
+.footer {
+  background-color: rgb(75, 29, 68);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 30px;
-  color: white;
-
+  align-items: center; /* Alinear verticalmente en todas las pantallas */
+  justify-content: space-between; /* Espaciado uniforme entre los elementos */
+}
+.footer-logo {
+  margin-bottom: 20px;
+  text-align: center; /* Alinear el logo a la derecha en pantallas grandes */
+  flex: 2; /* Ocupa el mismo espacio que las columnas */
+}
+.footer-logo img {
+  text-align: center;
+  max-width: 40%;
+  height: auto;
+  display:flexbox; /* Para evitar espacios en blanco alrededor de la imagen */
+ 
+}
+.footer-columns {
+  display: flex;
+  flex: 6; /* Tres veces el espacio del logo */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
 }
 
-.navegacion {
+.footer-column h3 {
+  
+  margin-bottom: 10px;
+  position: relative; /* Posición relativa para el subrayado */
+}
+.footer-column h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Distancia del subrayado respecto al texto */
+  width: 100%;
+  border-bottom: 2px solid #fff; /* Estilo del subrayado */
+}
+.footer-column ul {
   list-style: none;
+  padding: o;
 }
-
-.redes {
-  display: flex;
-  margin-top: 5px;
+.footer-column ul li {
+  margin-bottom: 3px;
+  padding: 2px;
 }
-
-h4 {
-  margin-bottom: 15px;
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(75, 29, 68);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: rgb(108, 70, 102);
+  }
+  
+  .boton:focus {
+    outline: none;
+  }
+  .footer-logo {
+      flex: 1 100%; /* El logo ocupa todo el ancho y se muestra arriba */
+      text-align: center; 
+      margin-bottom: 20px; /* Añadir margen inferior al logo en pantallas pequeñas */
+  }
+  .footer-logo img {
+      width: 10%;
+  }
+  .footer-columns {
+      flex-direction: column;
+      align-items: center; /* Alinear al centro del footer en pantallas pequeñas */
+  }
+  .footer-column {
+      margin: 10px 0;
+  }
+  .footer-column h3:hover {
+    color: rgb(185, 150, 195);
+  }
+  .footer-column ul {
+      display: none;
+  }
+  .footer-column.active ul {
+      display: block;
+      background-color: rgb(109, 68, 103);  
+      border-radius: 8px;
+  }
 }
-
-.contact {
-  display: flex;
-  margin-top: 5px;
-}
-
-.contact a p,
-.redes a p {
-  color: white;
-}
-
-.redes {
-  display: flex;
-  margin-top: 5px;
+/* Estilos para "Derechos reservados" */
+.rights {
+  width: 100%; /* Asegurar que ocupe todo el ancho */
+  text-align: center; /* Alinear el texto al centro */
+  margin-top: 20px; /* Espacio adicional entre los elementos */
+  
 }
 
 
@@ -788,46 +905,3 @@ h4 {
   }
 }
 
-/* ------------------ocultacion logo footer---------------*/
-
-@media (max-width: 600px) {
-  /* Oculta el logo-footer en pantallas pequeñas */
-  .logo-footer {
-    display: none;
-  }
-
-  /* Estilos para los elementos del footer en pantallas pequeñas */
-  .elementos-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px; /* Ajusta el padding según tus necesidades */
-  }
-
-  .navegacion,
-  .contactanos,
-  .redes-sociales {
-    margin-bottom: 10px; /* Añade un margen inferior para separar las secciones */
-  }
-
-  .navegacion li,
-  .contactanos .contact,
-  .redes-sociales .redes {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px; /* Espaciado entre los elementos */
-  }
-
-  .navegacion li a,
-  .contactanos a,
-  .redes-sociales a {
-    display: inline-block;
-    margin-left: 0px; /* Espaciado a la izquierda de los íconos */
-  }
-
-  .navegacion h4,
-  .contactanos h4,
-  .redes-sociales h4 {
-    margin-bottom: 10px; /* Espaciado debajo de los títulos */
-  }
-}
