@@ -42,48 +42,14 @@
         <ul class="dropdown_menu">
             <li><a href="index.html">Volver</a></li>
             <li><a href="reserva.html">Reserva</a></li>
-            <li><a href="#sucursales">Sucursales</a></li>
+            <li><a href="index.html#sucursales">Sucursales</a></li>
             <li><a href="" class="action_btn">Ingresar</a></li>
         </ul>
     </header>
 <main>
     <h1 class="tituloPrincipal">Nuestas delicias </h1>
     <div id="CartaTarjetas" class="tarjetas"></div>
-    <script>
-        // Cargar datos desde el archivo JSON
-        fetch('cartajson/carta.json')
-            .then(response => response.json())
-            .then(data => {
-                const menuList = document.getElementById('CartaTarjetas');
-                data.forEach(item => {
-                    const divContenedor = document.createElement('div');
-                    divContenedor.className = "divContenedor";
-                    divContenedor.innerHTML = `
-        <div>
-           <p class='titulo'>  
-          ${item.nombre}                
-            </p> 
-            <img src="${item.imagen}" class="imgCss"/>
-                <p class= 'titulo'> 
-                    $${item.precio}
-                </p>          
-        </div>   
-          `;
-                    // Crear imagen, luego asignar la direccion desde el JSON
-                    //const img = document.createElement('img');
-                    //.src = item.imagen;  //Asume que el JSON tiene una propiedad "imagen"
-                    //   img.className = "imgCss"
-
-                    // Agregar clase para aplicar estilos
-                    //   img.classList.add('menu-item-image');
-
-                    // Agregar elementos al DOM
-                    //   divContenedor.appendChild(img);
-                    menuList.appendChild(divContenedor);
-                });
-            })
-            .catch(error => console.error('Error al traer los datos del Json:', error));
-    </script>
+    <script src="js/carta.js"></script>
 </main>
     <footer class="footer">
         <div class="footer-logo">
