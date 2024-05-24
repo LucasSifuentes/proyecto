@@ -1,46 +1,47 @@
 /*display flex para carta*/
 .tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    color: #C5C5C5;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 90vh;
-  }
-  
-  /* titulo principal */
-  .tituloPrincipal {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    color: #C5C5C5;
-    font-size: 50px;
-    font-weight: 700;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .titulo {
-    text-align: center;
-    font-size: large;
-    font-weight: 700;
-  }
-  
-  .divContenedor {
-    width: 400px;
-    color: #C5C5C5;
-    border: solid 2px rgb(104, 102, 81);
-    border-radius: 15px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .imgCss {
-  
-    width: 100%;
-    color: #C5C5C5;
-    object-fit: cover;
-    /* align-items: center; */
-  }
+  display: flex;
+  flex-wrap: wrap;
+  color: #C5C5C5;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 90vh;
+}
+
+/* titulo principal */
+.tituloPrincipal {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #C5C5C5;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+}
+
+.divContenedor {
+  width: 400px;
+  color: #C5C5C5;
+  border: solid 2px rgb(104, 102, 81);
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.imgCss {
+
+  width: 100%;
+  color: #C5C5C5;
+  object-fit: cover;
+  /* align-items: center; */
+}
+
 /*-------------------------NORMALIZE------------------*/
 * {
   margin: 0;
@@ -75,14 +76,28 @@ a {
   display: none;
 }
 
-  /*Header*/
-header{
+
+
+/*-------------------------HEADER------------------*/
+header {
   position: relative;
   padding: 0 2rem;
 }
 
+li {
+  list-style: none;
+}
 
-.navbar{
+
+
+
+
+/*-------------------------NAVBAR------------------*/
+a:hover {
+  color: rgb(158, 62, 144);
+}
+
+.navbar {
   width: 100%;
   height: 60px;
   max-width: 1200px;
@@ -91,7 +106,8 @@ header{
   align-items: center;
   justify-content: space-between;
 }
-.navbar .logo a{
+
+.navbar .logo a {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -99,20 +115,24 @@ header{
 .logo img {
   margin-top: 40px;
 
-  width: 70px; /* Ajusta el tamaño según sea necesario */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 70px;
+  /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
 }
 
 .navbar .links {
   display: flex;
   gap: 2rem;
 }
+
 .navbar .toggle_btn {
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
+
 .action_btn {
   background-color: rgb(75, 29, 68);
   color: #fff;
@@ -125,16 +145,19 @@ header{
   cursor: pointer;
   transition: scale 0.2 ease;
 }
-.action_btn:hover{
+
+.action_btn:hover {
   scale: 1.05;
   color: #fff;
 
 }
+
 .action_btn:active {
   scale: 0.95;
 }
+
 /*DROPDOWN MENU*/
-.dropdown_menu{
+.dropdown_menu {
   display: none;
   position: absolute;
   right: 2rem;
@@ -147,27 +170,57 @@ header{
   overflow: hidden;
   transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.dropdown_menu.open{
+
+.dropdown_menu.open {
   height: 240px;
 }
-.dropdown_menu li{
+
+.dropdown_menu li {
   padding: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dropdown_menu .action_btn{
+
+.dropdown_menu .action_btn {
   width: 80%;
   display: flex;
   justify-content: center;
 }
-.titulo1{
 
-  font-family: Georgia, 'Times New Roman', Times, serif ;
-}    
+@media (max-width: 600px) {
+  .centrar-en-movil {
+    text-align: start;
+  }
+}
 
- /*------------------------- FOOTER ------------------*/
- .footer {
+
+/*RESPONSIVE DESIGN*/
+@media(max-width: 992px) {
+
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+@media(max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+/*------------------------- FOOTER ------------------*/
+.footer {
   background-color: rgb(75, 29, 68);
   color: #fff;
   padding: 20px;
@@ -218,8 +271,8 @@ header{
   padding: o;
 }
 .footer-column ul li {
-  margin-bottom: 5px;
-  padding: 5px;
+  margin-bottom: 3px;
+  padding: 2px;
 }
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
@@ -278,10 +331,8 @@ header{
   
 }
 
-
-
 /* -------------------------- MEDIA QUERIES ------------------------------------*/
-  
+
 @media (min-width: 340px) {
   .general-container {
     display: grid;
@@ -292,8 +343,6 @@ header{
       "main"
       "footer";
   }
-
-
 
   body {
     font-size: 12px;
@@ -343,6 +392,7 @@ header{
       "main"
       "footer";
   }
+
   body {
     font-size: 14px;
   }
@@ -367,6 +417,7 @@ header{
       "main"
       "footer";
   }
+
   body {
     font-size: 12px;
   }
@@ -375,6 +426,7 @@ header{
     padding: 5px;
   }
 }
+
 @media (min-width: 543px) {
   .general-container {
     display: grid;
@@ -405,6 +457,7 @@ header{
       "main"
       "footer";
   }
+
   body {
     font-size: 14px;
   }
@@ -449,6 +502,7 @@ header{
     padding: 5px;
   }
 }
+
 @media (min-width: 885px) {
   .general-container {
     display: grid;
@@ -465,6 +519,7 @@ header{
     padding: 10px;
   }
 }
+
 @media screen and (min-width: 1250px) {
   .general-container {
     display: grid;
@@ -475,6 +530,7 @@ header{
       "main main main"
       "footer footer footer";
   }
+
   body {
     font-size: 16px;
   }
@@ -488,53 +544,10 @@ header{
     font-size: 16px;
   }
 }
+
 @media (max-width: 600px) {
   .texto-oculto {
-      display: none;
-  }
-}
-
-
-/* ------------------ocultacion logo footer---------------*/
-
-@media (max-width: 600px) {
-  /* Oculta el logo-footer en pantallas pequeñas */
-  .logo-footer {
     display: none;
   }
-
-  /* Estilos para los elementos del footer en pantallas pequeñas */
-  .elementos-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px; /* Ajusta el padding según tus necesidades */
-  }
-
-  .navegacion,
-  .contactanos,
-  .redes-sociales {
-    margin-bottom: 10px; /* Añade un margen inferior para separar las secciones */
-  }
-
-  .navegacion li,
-  .contactanos .contact,
-  .redes-sociales .redes {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px; /* Espaciado entre los elementos */
-  }
-
-  .navegacion li a,
-  .contactanos a,
-  .redes-sociales a {
-    display: inline-block;
-    margin-left: 0px; /* Espaciado a la izquierda de los íconos */
-  }
-
-  .navegacion h4,
-  .contactanos h4,
-  .redes-sociales h4 {
-    margin-bottom: 10px; /* Espaciado debajo de los títulos */
-  }
 }
+
