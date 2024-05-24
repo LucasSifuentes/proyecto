@@ -76,8 +76,6 @@ a {
   display: none;
 }
 
-
-
 /*-------------------------HEADER------------------*/
 header {
   position: relative;
@@ -87,10 +85,6 @@ header {
 li {
   list-style: none;
 }
-
-
-
-
 
 /*-------------------------NAVBAR------------------*/
 a:hover {
