@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "Napo Super SP",
+    "precio": "6500,00",
+    "imagen": "https://inflexionit.com/img/Napo.jpg"
+  },
+  {
+    "nombre": "Mila Caballo Super SP",
+    "precio": "5300,00",
+    "imagen": "https://inflexionit.com/img/caballo.jpg"
+  },
+  {
+    "nombre": "Tira de Asado para compartir",
+    "precio": "18500,00",
+    "imagen": "https://inflexionit.com/img/Asado-de-Tira.jpg"
+  },
+  {
+    "nombre": "Asado el Porteño para compartir",
+    "precio": "20500,00",
+    "imagen": "https://inflexionit.com/img/asadox2.jpg"
+  },
+  {
+    "nombre": "Matambrito a la Pizza para compartir",
+    "precio": "8500,00",
+    "imagen": "https://inflexionit.com/img/matambrePizza.jpg"
+  },
+  {
+    "nombre": "Lomo Negro SP",
+    "precio": "8500,00",
+    "imagen": "https://inflexionit.com/img/lomoNegro.jpg"
+  },
+  {
+    "nombre": "Gran Casuela de Pollo SP",
+    "precio": "7500,00",
+    "imagen": "https://inflexionit.com/img/casuelaPollo.jpg"
+  }
+]
